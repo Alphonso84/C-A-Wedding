@@ -63,12 +63,7 @@ class PhotosViewController: UICollectionViewController {
         print(indexPath.row)
         
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let detailController = storyboard?.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
-//        detailController.meme = memes[indexPath.row]
-//        
-//        navigationController?.show(detailController, sender: collectionView)
-//    }
+   
 }
 
 
