@@ -5,7 +5,7 @@
 //  Created by user on 9/26/17.
 //  Copyright © 2017 Alphonso. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 
@@ -23,8 +23,8 @@ struct friends {
 }
 
 
-class Wedding: UIViewController, UITableViewDataSource, UITableViewDelegate{
-   
+class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     let sections = ["GroomsMen", "BridesMaids"]
     var groomsMen: [friends] = []
     var bridesMaids: [friends] = []
@@ -35,7 +35,7 @@ class Wedding: UIViewController, UITableViewDataSource, UITableViewDelegate{
     let Joseph = friends(name: "Joseph Sensley", job: "Best Man", image: #imageLiteral(resourceName: "Joseph.JPG"))
     let Len = friends(name: "Len Lacanlale", job: "Pharmacy Technician", image: #imageLiteral(resourceName: "Len.JPG"))
     
-   
+    
     let Gena = friends(name: "Gena Brown", job: "", image: #imageLiteral(resourceName: "Gena.JPG"))
     let Chereese = friends(name: "Chereese Bedingfield Rowe", job: "", image:#imageLiteral(resourceName: "Chereese.JPG"))
     let Alecia = friends(name: "Alecia Harris", job: "", image: #imageLiteral(resourceName: "Alecia.JPG"))
@@ -46,7 +46,7 @@ class Wedding: UIViewController, UITableViewDataSource, UITableViewDelegate{
     let Brittney_C = friends(name: "Brittney Coleman", job: "", image: #imageLiteral(resourceName: "BrittneyC.JPG"))
     let Brittney_R = friends(name: "Brittney Richardson", job: "", image: #imageLiteral(resourceName: "BrittneyR.JPG"))
     
-
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -54,8 +54,7 @@ class Wedding: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+        
         
         groomsMen = [ Aaron, Neville, Jonathan, Joseph, Len]
         bridesMaids = [Gena, Chereese, Alecia, Kristy, Blake, Ashley, Danielle, Brittney_C, Brittney_R]
@@ -63,52 +62,71 @@ class Wedding: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
     }
     
-   
     
     
-    
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
-    let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-    let sectionNumber = indexPath.section
-    
-    
-    if sectionNumber == 0 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        cell.textLabel?.text = groomsMen[indexPath.row].name
-        cell.detailTextLabel?.text = groomsMen[indexPath.row].job
-        cell.imageView?.image = groomsMen[indexPath.row].image
-        return cell
-    } else if
-        sectionNumber == 1 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        cell.textLabel?.text = bridesMaids[indexPath.row].name
-        cell.detailTextLabel?.text = bridesMaids[indexPath.row].job
-        cell.imageView?.image = bridesMaids[indexPath.row].image
-        return cell
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        
+        return 2
+        
     }
     
-    return cell
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Groomsmen"
     }
     
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            switch (section) {
-            case 0:
-            return groomsMen.count
-            case 1:
-                return bridesMaids.count
-            default:
-                return groomsMen.count
-            }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let sectionNumber = indexPath.section
+        
+        
+        if sectionNumber == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+            
+            cell.textLabel?.text = groomsMen[indexPath.row].name
+            
+            cell.imageView?.image = groomsMen[indexPath.row].image
+            return cell
+        } else {
+           
+            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+            
+            cell.textLabel?.text = bridesMaids[indexPath.row].job
+            cell.imageView?.image = bridesMaids[indexPath.row].image
+            return cell
             
         }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailController = WeddingDetailController.self as! UIViewController
         
-      showDetailViewController(detailController, sender: self)
+       
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return groomsMen.count
+        } else {
+            return bridesMaids.count
+        }
+        
+        
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let detailController = WeddingDetailController()
+//        let sectionNumber = indexPath.section
+//
+//        if sectionNumber == 0 {
+//            detailController.detailImageView.image = groomsMen[indexPath.row].image
+//            detailController.nameLabel.text = groomsMen[indexPath.row].name
+//        } else {
+//            detailController.detailImageView.image = bridesMaids[indexPath.row].image
+//            detailController.nameLabel.text = bridesMaids[indexPath.row].name
+//        }
+//
+//        //      showDetailViewController(detailController, sender: tableView)
+//        present(detailController, animated: true)
         
     }
     
     
 }
+

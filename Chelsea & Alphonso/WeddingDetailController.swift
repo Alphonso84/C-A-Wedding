@@ -8,13 +8,14 @@
 
 import UIKit
 
-class WeddingDetailController: Wedding {
+class WeddingDetailController: UIViewController {
     
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
 override func viewDidLoad() {
         super.viewDidLoad()
+    
     var groomsMen: [friends] = []
     var bridesMaids: [friends] = []
     
