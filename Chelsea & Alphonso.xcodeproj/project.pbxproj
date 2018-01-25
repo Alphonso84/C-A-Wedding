@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		890C8AA320194B790078B7FA /* Wedding Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA220194B790078B7FA /* Wedding Party.swift */; };
 		890C8AA520194DEC0078B7FA /* Wedding Party Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */; };
+		890C8AA72019FA8C0078B7FA /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA62019FA8C0078B7FA /* SideMenu.swift */; };
 		89415F4F1F92F952008F9CAE /* PhotosDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */; };
 		8962E8631FBCED3A000A0639 /* WeddingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */; };
 		896DE36A1F239E0F00B95D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE3691F239E0F00B95D2A /* AppDelegate.swift */; };
@@ -90,6 +91,7 @@
 /* Begin PBXFileReference section */
 		890C8AA220194B790078B7FA /* Wedding Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party.swift"; sourceTree = "<group>"; };
 		890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party Cell.swift"; sourceTree = "<group>"; };
+		890C8AA62019FA8C0078B7FA /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailController.swift; sourceTree = "<group>"; };
 		8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDetailController.swift; sourceTree = "<group>"; };
 		896DE3661F239E0F00B95D2A /* Chelsea & Alphonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chelsea & Alphonso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 				896DE36B1F239E0F00B95D2A /* MainViewController.swift */,
 				897A1A411F5D473C000EB227 /* PhotosViewController.swift */,
 				890C8AA220194B790078B7FA /* Wedding Party.swift */,
+				890C8AA62019FA8C0078B7FA /* SideMenu.swift */,
 				890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */,
 				89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */,
 				89B87DFF1F51A90700874AEB /* WebViewController.swift */,
@@ -473,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890C8AA72019FA8C0078B7FA /* SideMenu.swift in Sources */,
 				896DE36C1F239E0F00B95D2A /* MainViewController.swift in Sources */,
 				89E39F2B1F649A48007DDD4E /* InitialViewController.swift in Sources */,
 				890C8AA320194B790078B7FA /* Wedding Party.swift in Sources */,
