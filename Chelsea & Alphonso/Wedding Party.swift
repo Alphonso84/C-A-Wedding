@@ -92,7 +92,7 @@ class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
            
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
             
-            cell.textLabel?.text = bridesMaids[indexPath.row].job
+            cell.textLabel?.text = bridesMaids[indexPath.row].name
             cell.imageView?.image = bridesMaids[indexPath.row].image
             return cell
             

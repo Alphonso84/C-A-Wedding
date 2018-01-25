@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Count Down-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Chelsea___Alphonso" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvK-E3-dKl">
-                                <rect key="frame" x="32" y="100" width="311" height="62"/>
+                                <rect key="frame" x="32" y="144" width="311" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="uaX-oV-Kfb"/>
                                 </constraints>
@@ -39,35 +39,75 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO1-QB-cHb">
-                                <rect key="frame" x="16" y="225" width="343" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="zhA-NJ-1Ea"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="214" width="343" height="30"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHC-Bz-dpy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-KZ-Aqa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Home" id="zsl-vU-Hen"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QJI-ef-ZHc">
+                                <rect key="frame" x="0.0" y="252" width="375" height="477"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nr-FR-0p9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                        <state key="normal" title="BUTTON" backgroundImage="shiny button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-Oq-H5O">
+                                        <rect key="frame" x="0.0" y="159" width="375" height="159"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                        <state key="normal" title="BUTTON" backgroundImage="shiny button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebf-Z8-1GC">
+                                        <rect key="frame" x="0.0" y="318" width="375" height="159"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                        <state key="normal" title="BUTTON" backgroundImage="shiny button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RO1-QB-cHb" firstAttribute="centerX" secondItem="IvK-E3-dKl" secondAttribute="centerX" id="N1P-JX-TfD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RO1-QB-cHb" secondAttribute="bottom" constant="485" id="0bZ-Jf-R5L"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="252-Qt-uXj"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="88p-jI-Etk"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="centerX" secondItem="RO1-QB-cHb" secondAttribute="centerX" id="8Oq-mW-Sr4"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="leading" secondItem="Uht-KZ-Aqa" secondAttribute="leading" id="Qin-0X-QAW"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="trailing" secondItem="Uht-KZ-Aqa" secondAttribute="trailing" id="TC4-LO-I9G"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="top" secondItem="RO1-QB-cHb" secondAttribute="bottom" constant="8" symbolic="YES" id="Xei-bY-vq8"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="leading" secondItem="RHC-Bz-dpy" secondAttribute="leading" id="Xzg-PY-wmQ"/>
                             <constraint firstItem="IvK-E3-dKl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ysb-dg-dNr"/>
-                            <constraint firstItem="RO1-QB-cHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bgx-ru-zZQ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RO1-QB-cHb" secondAttribute="bottom" constant="430" id="bqV-Cd-S5Q"/>
+                            <constraint firstItem="RO1-QB-cHb" firstAttribute="centerX" secondItem="IvK-E3-dKl" secondAttribute="centerX" id="aUe-z3-BKn"/>
+                            <constraint firstItem="QJI-ef-ZHc" firstAttribute="trailing" secondItem="RHC-Bz-dpy" secondAttribute="trailing" id="dZX-mb-XB6"/>
+                            <constraint firstItem="RO1-QB-cHb" firstAttribute="top" secondItem="IvK-E3-dKl" secondAttribute="bottom" constant="8" symbolic="YES" id="kRR-vH-l3t"/>
                             <constraint firstItem="IvK-E3-dKl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="wte-C7-061"/>
+                            <constraint firstItem="RO1-QB-cHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yog-AN-6Xv"/>
                             <constraint firstItem="IvK-E3-dKl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="zAW-fA-4Jt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Count Down" image="Home" selectedImage="Home" id="NOk-Oj-xrw"/>
-                    <navigationItem key="navigationItem" id="lkk-UG-MT9"/>
+                    <navigationItem key="navigationItem" id="o71-Vo-31S"/>
                     <connections>
                         <outlet property="dateLabelOutlet" destination="RO1-QB-cHb" id="Ovs-i6-x7v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4252" y="-208.37438423645321"/>
+            <point key="canvasLocation" x="5426" y="-469"/>
         </scene>
         <!--Website-->
         <scene sceneID="TDv-01-iZY">
@@ -188,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llm-SS-VN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5546.3999999999996" y="-65.763546798029566"/>
+            <point key="canvasLocation" x="6562.3999999999996" y="95.320197044334975"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7fI-24-gOc">
@@ -375,7 +415,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5Ao-Be-OkK"/>
+                        <segue destination="c8J-O7-Xlv" kind="relationship" relationship="viewControllers" id="5Ao-Be-OkK"/>
                         <segue destination="AHd-4e-suq" kind="relationship" relationship="viewControllers" id="eTM-Ox-evr"/>
                         <segue destination="SWU-bY-TxW" kind="relationship" relationship="viewControllers" id="iLW-Zc-gGA"/>
                         <segue destination="Gx2-ba-NWv" kind="relationship" relationship="viewControllers" id="UC6-g2-Vff"/>
@@ -453,7 +493,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yM5-zJ-TQZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="86" width="375" height="726"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="136" id="tLt-f0-kgh" customClass="WeddingPartyCell" customModule="Chelsea___Alphonso" customModuleProvider="target">
@@ -486,11 +526,25 @@
                                     <outlet property="delegate" destination="Gx2-ba-NWv" id="2BU-bY-Bho"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXu-a4-NEF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="rWv-4G-4tC"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E02-zu-HhF">
+                                <rect key="frame" x="0.0" y="42" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="QB2-rp-LMp"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="yM5-zJ-TQZ" secondAttribute="trailing" id="5YU-On-uJA"/>
-                            <constraint firstItem="yM5-zJ-TQZ" firstAttribute="top" secondItem="ox2-IP-N1i" secondAttribute="top" id="g6s-kG-HWY"/>
+                            <constraint firstItem="yM5-zJ-TQZ" firstAttribute="top" secondItem="ox2-IP-N1i" secondAttribute="top" constant="86" id="g6s-kG-HWY"/>
                             <constraint firstItem="yM5-zJ-TQZ" firstAttribute="leading" secondItem="ox2-IP-N1i" secondAttribute="leading" id="zSo-O1-JEM"/>
                             <constraint firstAttribute="bottom" secondItem="yM5-zJ-TQZ" secondAttribute="bottom" id="zwJ-SP-qN2"/>
                         </constraints>
@@ -502,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHu-cy-Suc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140" y="553"/>
+            <point key="canvasLocation" x="2140" y="552.70935960591135"/>
         </scene>
         <!--Our Site-->
         <scene sceneID="mQ0-gs-aMA">
@@ -523,11 +577,31 @@
             </objects>
             <point key="canvasLocation" x="3106" y="604"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="FSA-gX-dBq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c8J-O7-Xlv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Menu" selectedImage="Menu" id="NOk-Oj-xrw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h6a-SY-bVA">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vSs-6Y-uiU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pk-T7-Wh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4361.6000000000004" y="-469.21182266009856"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Home" width="32" height="32"/>
+        <image name="Menu" width="32" height="32"/>
         <image name="Photos" width="32" height="32"/>
         <image name="couple" width="42" height="42"/>
         <image name="group" width="42" height="42"/>
+        <image name="shiny button" width="216" height="105"/>
     </resources>
 </document>
