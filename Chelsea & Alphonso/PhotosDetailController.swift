@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotosDetailController: UIViewController {
+class PhotosDetail1Controller: UIViewController {
    
     
     @IBOutlet var myPhotos: UIImageView!

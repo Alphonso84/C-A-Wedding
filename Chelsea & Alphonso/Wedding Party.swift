@@ -65,15 +65,21 @@ class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        
-        
         return 2
         
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+        
         return "Groomsmen"
+        } else {
+            return "Bridesmaids"
+        }
+        
     }
+        
+        
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -129,4 +135,5 @@ class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 }
+
 

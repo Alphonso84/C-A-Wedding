@@ -57,7 +57,7 @@ class PhotosViewController: UICollectionViewController {
 
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailController = storyboard?.instantiateViewController(withIdentifier: "PhotosDetailController") as! PhotosDetailController
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "PhotosDetail1Controller") as! PhotosDetail1Controller
         detailController.photo = UIImage(named: array[indexPath.row] + ".jpg")
         navigationController?.show(detailController, sender: collectionView)
         print(indexPath.row)
