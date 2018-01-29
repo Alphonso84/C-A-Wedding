@@ -80,13 +80,10 @@ class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
         
         
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         let sectionNumber = indexPath.section
-        
-        
+    
         if sectionNumber == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
             
@@ -101,8 +98,7 @@ class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = bridesMaids[indexPath.row].name
             cell.imageView?.image = bridesMaids[indexPath.row].image
             return cell
-            
-        }
+            }
         
        
     }
