@@ -13,6 +13,7 @@ var todoItems = [String]()
 class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
    
+    @IBOutlet weak var tableView: UITableView!
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -21,7 +22,8 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        cell.detailTextLabel?.text = todoItems[indexPath.row]
+        cell.textLabel?.text = todoItems[indexPath.row]
         return cell
     }
     
