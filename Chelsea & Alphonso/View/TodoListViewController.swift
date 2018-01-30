@@ -33,6 +33,13 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            todoItems.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         todoItems = ["Test1","Test2","Test3"]

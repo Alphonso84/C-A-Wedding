@@ -16,8 +16,8 @@ class WeddingDetailController: UIViewController {
 override func viewDidLoad() {
         super.viewDidLoad()
     
-    var groomsMen: [friends] = []
-    var bridesMaids: [friends] = []
+    var groomsMen: [Friend] = []
+    var bridesMaids: [Friend] = []
     
     
         

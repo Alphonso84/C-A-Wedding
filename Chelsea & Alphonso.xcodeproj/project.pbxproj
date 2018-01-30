@@ -10,6 +10,8 @@
 		890C8AA320194B790078B7FA /* Wedding Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA220194B790078B7FA /* Wedding Party.swift */; };
 		890C8AA520194DEC0078B7FA /* Wedding Party Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */; };
 		890C8AA72019FA8C0078B7FA /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA62019FA8C0078B7FA /* SideMenu.swift */; };
+		890D48D82020434000975515 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48D72020434000975515 /* Model.swift */; };
+		890D48DD202059F500975515 /* TodoListAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48DC202059F500975515 /* TodoListAdd.swift */; };
 		89415F4F1F92F952008F9CAE /* PhotosDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */; };
 		8962E8631FBCED3A000A0639 /* WeddingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */; };
 		896DE36A1F239E0F00B95D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE3691F239E0F00B95D2A /* AppDelegate.swift */; };
@@ -92,6 +94,8 @@
 		890C8AA220194B790078B7FA /* Wedding Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party.swift"; sourceTree = "<group>"; };
 		890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party Cell.swift"; sourceTree = "<group>"; };
 		890C8AA62019FA8C0078B7FA /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		890D48D72020434000975515 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		890D48DC202059F500975515 /* TodoListAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAdd.swift; sourceTree = "<group>"; };
 		89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailController.swift; sourceTree = "<group>"; };
 		8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDetailController.swift; sourceTree = "<group>"; };
 		896DE3661F239E0F00B95D2A /* Chelsea & Alphonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chelsea & Alphonso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +105,7 @@
 		896DE3701F239E0F00B95D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896DE3731F239E0F00B95D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896DE3751F239E0F00B95D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		897A1A411F5D473C000EB227 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = ../PhotosViewController.swift; sourceTree = "<group>"; };
+		897A1A411F5D473C000EB227 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		899606B61FB3B33700B2500D /* Aaron.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aaron.JPG; sourceTree = "<group>"; };
 		899606B71FB3B33700B2500D /* Jonathan.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jonathan.JPG; sourceTree = "<group>"; };
 		899606B81FB3B33700B2500D /* Joseph.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joseph.JPG; sourceTree = "<group>"; };
@@ -116,10 +120,10 @@
 		899606CC1FB3BF4800B2500D /* Danielle.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Danielle.JPG; sourceTree = "<group>"; };
 		899606CD1FB3BF4800B2500D /* Gena.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gena.JPG; sourceTree = "<group>"; };
 		899606CE1FB3BF4800B2500D /* Kristy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kristy.JPG; sourceTree = "<group>"; };
-		89B87DFF1F51A90700874AEB /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
+		89B87DFF1F51A90700874AEB /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		89DDD9822008C99F00DC6C8C /* Fonz&Chels.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fonz&Chels.jpg"; sourceTree = "<group>"; };
 		89DDD9842008CA7E00DC6C8C /* Sunrise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunrise.jpg; sourceTree = "<group>"; };
-		89E39EA11F5F51E2007DDD4E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		89E39EA11F5F51E2007DDD4E /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		89E39EA41F5F52E6007DDD4E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		89E39EA51F5F52E6007DDD4E /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		89E39EA61F5F52E6007DDD4E /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
@@ -183,7 +187,7 @@
 		89E39F231F6165BB007DDD4E /* upperRight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upperRight.jpg; sourceTree = "<group>"; };
 		89E39F241F6165BB007DDD4E /* lowerRight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lowerRight.jpg; sourceTree = "<group>"; };
 		89E39F251F6165BB007DDD4E /* lowerLeft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lowerLeft.jpg; sourceTree = "<group>"; };
-		89E39F2A1F649A48007DDD4E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = ../InitialViewController.swift; sourceTree = "<group>"; };
+		89E39F2A1F649A48007DDD4E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890D48D9202043A800975515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				890D48D72020434000975515 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		890D48DA202043DA00975515 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				896DE3691F239E0F00B95D2A /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		890D48DB202043F000975515 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89E39F2A1F649A48007DDD4E /* InitialViewController.swift */,
+				89E39EA11F5F51E2007DDD4E /* MyCollectionViewCell.swift */,
+				896DE36B1F239E0F00B95D2A /* MainViewController.swift */,
+				897A1A411F5D473C000EB227 /* PhotosViewController.swift */,
+				89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */,
+				890C8AA220194B790078B7FA /* Wedding Party.swift */,
+				890C8AA62019FA8C0078B7FA /* SideMenu.swift */,
+				890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */,
+				89B87DFF1F51A90700874AEB /* TodoListViewController.swift */,
+				890D48DC202059F500975515 /* TodoListAdd.swift */,
+				8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		896DE35D1F239E0F00B95D2A = {
 			isa = PBXGroup;
 			children = (
@@ -216,17 +254,9 @@
 		896DE3681F239E0F00B95D2A /* Chelsea & Alphonso */ = {
 			isa = PBXGroup;
 			children = (
-				896DE3691F239E0F00B95D2A /* AppDelegate.swift */,
-				89E39F2A1F649A48007DDD4E /* InitialViewController.swift */,
-				89E39EA11F5F51E2007DDD4E /* MyCollectionViewCell.swift */,
-				896DE36B1F239E0F00B95D2A /* MainViewController.swift */,
-				897A1A411F5D473C000EB227 /* PhotosViewController.swift */,
-				89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */,
-				890C8AA220194B790078B7FA /* Wedding Party.swift */,
-				890C8AA62019FA8C0078B7FA /* SideMenu.swift */,
-				890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */,
-				89B87DFF1F51A90700874AEB /* TodoListViewController.swift */,
-				8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */,
+				890D48D9202043A800975515 /* Model */,
+				890D48DA202043DA00975515 /* Controller */,
+				890D48DB202043F000975515 /* View */,
 				896DE36D1F239E0F00B95D2A /* Main.storyboard */,
 				896DE3701F239E0F00B95D2A /* Assets.xcassets */,
 				896DE3721F239E0F00B95D2A /* LaunchScreen.storyboard */,
@@ -479,6 +509,7 @@
 				890C8AA72019FA8C0078B7FA /* SideMenu.swift in Sources */,
 				896DE36C1F239E0F00B95D2A /* MainViewController.swift in Sources */,
 				89E39F2B1F649A48007DDD4E /* InitialViewController.swift in Sources */,
+				890D48D82020434000975515 /* Model.swift in Sources */,
 				890C8AA320194B790078B7FA /* Wedding Party.swift in Sources */,
 				89B87E001F51A90700874AEB /* TodoListViewController.swift in Sources */,
 				89E39EA21F5F51E2007DDD4E /* MyCollectionViewCell.swift in Sources */,
@@ -487,6 +518,7 @@
 				897A1A421F5D473C000EB227 /* PhotosViewController.swift in Sources */,
 				8962E8631FBCED3A000A0639 /* WeddingDetailController.swift in Sources */,
 				890C8AA520194DEC0078B7FA /* Wedding Party Cell.swift in Sources */,
+				890D48DD202059F500975515 /* TodoListAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

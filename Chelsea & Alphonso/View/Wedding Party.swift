@@ -9,42 +9,31 @@ import Foundation
 import UIKit
 
 
-struct friends {
-    var name: String
-    var job: String
-    var image: UIImage
-    
-    init(name: String, job: String, image: UIImage) {
-        self.name = name
-        self.job = job
-        self.image = image
-        
-    }
-}
+
 
 
 class Wedding: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let sections = ["GroomsMen", "BridesMaids"]
-    var groomsMen: [friends] = []
-    var bridesMaids: [friends] = []
+    var groomsMen: [Friend] = []
+    var bridesMaids: [Friend] = []
     
-    let Aaron = friends(name: "Aaron Seabron", job: "Sales Director at Adidas", image: #imageLiteral(resourceName: "Aaron"))
-    let Neville = friends(name: "Neville Sumiran", job: "Civil Engineer", image: #imageLiteral(resourceName: "Neville.JPG"))
-    let Jonathan = friends(name: "Jonathan Overall", job: "Pastor", image: #imageLiteral(resourceName: "Jonathan.JPG"))
-    let Joseph = friends(name: "Joseph Sensley", job: "Best Man", image: #imageLiteral(resourceName: "Joseph.JPG"))
-    let Len = friends(name: "Len Lacanlale", job: "Pharmacy Technician", image: #imageLiteral(resourceName: "Len.JPG"))
+    let Aaron = Friend(name: "Aaron Seabron", job: "Sales Director at Adidas", image: #imageLiteral(resourceName: "Aaron"))
+    let Neville = Friend(name: "Neville Sumiran", job: "Civil Engineer", image: #imageLiteral(resourceName: "Neville.JPG"))
+    let Jonathan = Friend(name: "Jonathan Overall", job: "Pastor", image: #imageLiteral(resourceName: "Jonathan.JPG"))
+    let Joseph = Friend(name: "Joseph Sensley", job: "Best Man", image: #imageLiteral(resourceName: "Joseph.JPG"))
+    let Len = Friend(name: "Len Lacanlale", job: "Pharmacy Technician", image: #imageLiteral(resourceName: "Len.JPG"))
     
     
-    let Gena = friends(name: "Gena Brown", job: "", image: #imageLiteral(resourceName: "Gena.JPG"))
-    let Chereese = friends(name: "Chereese Bedingfield Rowe", job: "", image:#imageLiteral(resourceName: "Chereese.JPG"))
-    let Alecia = friends(name: "Alecia Harris", job: "", image: #imageLiteral(resourceName: "Alecia.JPG"))
-    let Kristy = friends(name: "Kristy Singletary", job: "", image: #imageLiteral(resourceName: "Kristy.JPG"))
-    let Blake = friends(name: "Blake", job: "", image: #imageLiteral(resourceName: "Blake.JPG"))
-    let Ashley = friends(name: "Ashley Seabron", job: "", image: #imageLiteral(resourceName: "Ashley.JPG"))
-    let Danielle = friends(name: "Danielle Sensley", job: "Marketing Manager", image: #imageLiteral(resourceName: "Danielle.JPG"))
-    let Brittney_C = friends(name: "Brittney Coleman", job: "", image: #imageLiteral(resourceName: "BrittneyC.JPG"))
-    let Brittney_R = friends(name: "Brittney Richardson", job: "", image: #imageLiteral(resourceName: "BrittneyR.JPG"))
+    let Gena = Friend(name: "Gena Brown", job: "", image: #imageLiteral(resourceName: "Gena.JPG"))
+    let Chereese = Friend(name: "Chereese Bedingfield Rowe", job: "", image:#imageLiteral(resourceName: "Chereese.JPG"))
+    let Alecia = Friend(name: "Alecia Harris", job: "", image: #imageLiteral(resourceName: "Alecia.JPG"))
+    let Kristy = Friend(name: "Kristy Singletary", job: "", image: #imageLiteral(resourceName: "Kristy.JPG"))
+    let Blake = Friend(name: "Blake", job: "", image: #imageLiteral(resourceName: "Blake.JPG"))
+    let Ashley = Friend(name: "Ashley Seabron", job: "", image: #imageLiteral(resourceName: "Ashley.JPG"))
+    let Danielle = Friend(name: "Danielle Sensley", job: "Marketing Manager", image: #imageLiteral(resourceName: "Danielle.JPG"))
+    let Brittney_C = Friend(name: "Brittney Coleman", job: "", image: #imageLiteral(resourceName: "BrittneyC.JPG"))
+    let Brittney_R = Friend(name: "Brittney Richardson", job: "", image: #imageLiteral(resourceName: "BrittneyR.JPG"))
     
     
     
