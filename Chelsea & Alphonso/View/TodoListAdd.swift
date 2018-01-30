@@ -8,9 +8,24 @@
 
 import Foundation
 import UIKit
+import CoreGraphics
 
 class AddToDoList: UIViewController {
+    @IBOutlet weak var todoInput: UITextField!
     
+    @IBAction func addTask(_ sender: Any) {
+        if (todoInput.text != "") {
+        todoItems.append(todoInput.text!)
+            
+           
+            todoInput.text = ""
+            navigationController!.popToRootViewController(animated: true)
+           
+        }
+        
+      
+       
+    }
     
-    
+   
 }

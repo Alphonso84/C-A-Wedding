@@ -24,6 +24,7 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.detailTextLabel?.text = todoItems[indexPath.row]
         cell.textLabel?.text = todoItems[indexPath.row]
+       
         return cell
     }
     
@@ -37,12 +38,17 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
         if editingStyle == UITableViewCellEditingStyle.delete {
             todoItems.remove(at: indexPath.row)
             tableView.reloadData()
+           
         }
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        todoItems = ["Test1","Test2","Test3"]
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
