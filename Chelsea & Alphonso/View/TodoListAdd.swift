@@ -15,7 +15,7 @@ class AddToDoList: UIViewController {
     
     @IBAction func addTask(_ sender: Any) {
         if (todoInput.text != "") {
-        todoItems.append(todoInput.text!)
+        todoItems?.append(todoInput.text!)
             
            
             todoInput.text = ""

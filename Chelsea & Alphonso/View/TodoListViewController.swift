@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-var todoItems = [String]()
+
 class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
    
@@ -22,21 +22,21 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.detailTextLabel?.text = todoItems[indexPath.row]
-        cell.textLabel?.text = todoItems[indexPath.row]
+        cell.detailTextLabel?.text = todoItems?[indexPath.row]
+        cell.textLabel?.text = todoItems?[indexPath.row]
        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return todoItems.count
+        return (todoItems?.count)!
         
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            todoItems.remove(at: indexPath.row)
+            todoItems?.remove(at: indexPath.row)
             tableView.reloadData()
            
         }

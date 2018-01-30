@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+var todoItems:[String]?
 struct Friend {
     var name: String
     var job: String
@@ -19,6 +20,18 @@ struct Friend {
         self.job = job
         self.image = image
         
+    }
+}
+
+func saveData(todoItems:[String]) {
+    UserDefaults.standard.set(todoItems, forKey: "todoItems")
+}
+
+func fetchData() -> [String]? {
+    if let todo = UserDefaults.standard.array(forKey: "todoItems") as? [String] {
+        return todo
+    } else {
+        return nil
     }
 }
 
