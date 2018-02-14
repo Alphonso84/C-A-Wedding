@@ -24,7 +24,7 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.detailTextLabel?.text = todoItems?[indexPath.row]
         cell.textLabel?.text = todoItems?[indexPath.row]
-       
+        
         return cell
     }
     
@@ -33,6 +33,20 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return (todoItems?.count)!
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       //Attempt To Add CheckMark and save its state in UserDefaults
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        }
+        UserDefaults.standard.set(tableView.cellForRow(at: indexPath)?.accessoryType, forKey: "cellAccessory")
+        
+        
+    }
+    
+   
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
@@ -45,6 +59,7 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

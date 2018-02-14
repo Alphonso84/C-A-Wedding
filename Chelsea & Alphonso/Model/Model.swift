@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 var todoItems:[String]?
+
+
 struct Friend {
     var name: String
     var job: String
@@ -22,6 +24,14 @@ struct Friend {
         
     }
 }
+
+//func fetchAccessoryType() -> UITableViewCellAccessoryType? {
+//    if let cellAccessory = UserDefaults.standard.object(forKey: "cellAccessory") {
+//        return cellAccessory as? UITableViewCellAccessoryType
+//    }else {
+//        return nil
+//    }
+//}
 
 func saveData(todoItems:[String]) {
     UserDefaults.standard.set(todoItems, forKey: "todoItems")

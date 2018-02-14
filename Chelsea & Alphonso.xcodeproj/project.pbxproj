@@ -13,7 +13,6 @@
 		890D48D82020434000975515 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48D72020434000975515 /* Model.swift */; };
 		890D48DD202059F500975515 /* TodoListAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48DC202059F500975515 /* TodoListAdd.swift */; };
 		89415F4F1F92F952008F9CAE /* PhotosDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */; };
-		8962E8631FBCED3A000A0639 /* WeddingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */; };
 		896DE36A1F239E0F00B95D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE3691F239E0F00B95D2A /* AppDelegate.swift */; };
 		896DE36C1F239E0F00B95D2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE36B1F239E0F00B95D2A /* MainViewController.swift */; };
 		896DE36F1F239E0F00B95D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896DE36D1F239E0F00B95D2A /* Main.storyboard */; };
@@ -97,7 +96,6 @@
 		890D48D72020434000975515 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		890D48DC202059F500975515 /* TodoListAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAdd.swift; sourceTree = "<group>"; };
 		89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailController.swift; sourceTree = "<group>"; };
-		8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDetailController.swift; sourceTree = "<group>"; };
 		896DE3661F239E0F00B95D2A /* Chelsea & Alphonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chelsea & Alphonso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896DE3691F239E0F00B95D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896DE36B1F239E0F00B95D2A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */,
 				89B87DFF1F51A90700874AEB /* TodoListViewController.swift */,
 				890D48DC202059F500975515 /* TodoListAdd.swift */,
-				8962E8621FBCED3A000A0639 /* WeddingDetailController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,7 +513,6 @@
 				89415F4F1F92F952008F9CAE /* PhotosDetailController.swift in Sources */,
 				896DE36A1F239E0F00B95D2A /* AppDelegate.swift in Sources */,
 				897A1A421F5D473C000EB227 /* PhotosViewController.swift in Sources */,
-				8962E8631FBCED3A000A0639 /* WeddingDetailController.swift in Sources */,
 				890C8AA520194DEC0078B7FA /* Wedding Party Cell.swift in Sources */,
 				890D48DD202059F500975515 /* TodoListAdd.swift in Sources */,
 			);
