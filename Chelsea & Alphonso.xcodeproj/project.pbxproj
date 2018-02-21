@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00861E5F1AA73E37DCEF581A /* Pods_Chelsea___Alphonso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF600BACE0B6742AB987DE /* Pods_Chelsea___Alphonso.framework */; };
 		890C8AA320194B790078B7FA /* Wedding Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA220194B790078B7FA /* Wedding Party.swift */; };
 		890C8AA520194DEC0078B7FA /* Wedding Party Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */; };
 		890C8AA72019FA8C0078B7FA /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C8AA62019FA8C0078B7FA /* SideMenu.swift */; };
 		890D48D82020434000975515 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48D72020434000975515 /* Model.swift */; };
 		890D48DD202059F500975515 /* TodoListAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D48DC202059F500975515 /* TodoListAdd.swift */; };
 		89415F4F1F92F952008F9CAE /* PhotosDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */; };
+		8960D237203D521F00BA36D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8960D236203D521E00BA36D4 /* GoogleService-Info.plist */; };
 		896DE36A1F239E0F00B95D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE3691F239E0F00B95D2A /* AppDelegate.swift */; };
 		896DE36C1F239E0F00B95D2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DE36B1F239E0F00B95D2A /* MainViewController.swift */; };
 		896DE36F1F239E0F00B95D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896DE36D1F239E0F00B95D2A /* Main.storyboard */; };
@@ -90,12 +92,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F84CBD3F3129D5C4C06FAC6 /* Pods-Chelsea & Alphonso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chelsea & Alphonso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chelsea & Alphonso/Pods-Chelsea & Alphonso.debug.xcconfig"; sourceTree = "<group>"; };
 		890C8AA220194B790078B7FA /* Wedding Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party.swift"; sourceTree = "<group>"; };
 		890C8AA420194DEC0078B7FA /* Wedding Party Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wedding Party Cell.swift"; sourceTree = "<group>"; };
 		890C8AA62019FA8C0078B7FA /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		890D48D72020434000975515 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		890D48DC202059F500975515 /* TodoListAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAdd.swift; sourceTree = "<group>"; };
 		89415F4E1F92F952008F9CAE /* PhotosDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailController.swift; sourceTree = "<group>"; };
+		8960D236203D521E00BA36D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		896DE3661F239E0F00B95D2A /* Chelsea & Alphonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chelsea & Alphonso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896DE3691F239E0F00B95D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896DE36B1F239E0F00B95D2A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 		89E39F241F6165BB007DDD4E /* lowerRight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lowerRight.jpg; sourceTree = "<group>"; };
 		89E39F251F6165BB007DDD4E /* lowerLeft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lowerLeft.jpg; sourceTree = "<group>"; };
 		89E39F2A1F649A48007DDD4E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		92C5B26B6E67F78F814FE180 /* Pods-Chelsea & Alphonso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chelsea & Alphonso.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chelsea & Alphonso/Pods-Chelsea & Alphonso.release.xcconfig"; sourceTree = "<group>"; };
+		C3EF600BACE0B6742AB987DE /* Pods_Chelsea___Alphonso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chelsea___Alphonso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,12 +199,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00861E5F1AA73E37DCEF581A /* Pods_Chelsea___Alphonso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BFF21CE8639210685CE83AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3EF600BACE0B6742AB987DE /* Pods_Chelsea___Alphonso.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		890D48D9202043A800975515 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +252,8 @@
 			children = (
 				896DE3681F239E0F00B95D2A /* Chelsea & Alphonso */,
 				896DE3671F239E0F00B95D2A /* Products */,
+				E350B4AC4BC7E4E4EC52049E /* Pods */,
+				2BFF21CE8639210685CE83AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +275,7 @@
 				896DE3701F239E0F00B95D2A /* Assets.xcassets */,
 				896DE3721F239E0F00B95D2A /* LaunchScreen.storyboard */,
 				896DE3751F239E0F00B95D2A /* Info.plist */,
+				8960D236203D521E00BA36D4 /* GoogleService-Info.plist */,
 				899606C51FB3BF4800B2500D /* BridesMaids */,
 				899606B51FB3B33700B2500D /* GroomsMen */,
 				89E39EA31F5F52E6007DDD4E /* Favorite Photos */,
@@ -365,6 +383,15 @@
 			path = "Favorite Photos";
 			sourceTree = "<group>";
 		};
+		E350B4AC4BC7E4E4EC52049E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F84CBD3F3129D5C4C06FAC6 /* Pods-Chelsea & Alphonso.debug.xcconfig */,
+				92C5B26B6E67F78F814FE180 /* Pods-Chelsea & Alphonso.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 896DE3781F239E0F00B95D2A /* Build configuration list for PBXNativeTarget "Chelsea & Alphonso" */;
 			buildPhases = (
+				75308FB3191A411547FDE6B2 /* [CP] Check Pods Manifest.lock */,
 				896DE3621F239E0F00B95D2A /* Sources */,
 				896DE3631F239E0F00B95D2A /* Frameworks */,
 				896DE3641F239E0F00B95D2A /* Resources */,
+				652A388CB2B14E3E87B54606 /* [CP] Embed Pods Frameworks */,
+				C800956BE3570D811C01A36D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +520,7 @@
 				89E39F061F5F52E6007DDD4E /* 36.jpg in Resources */,
 				89E39EF11F5F52E6007DDD4E /* 22.jpg in Resources */,
 				89E39F171F5F52E6007DDD4E /* IMG_2946.jpg in Resources */,
+				8960D237203D521F00BA36D4 /* GoogleService-Info.plist in Resources */,
 				896DE3711F239E0F00B95D2A /* Assets.xcassets in Resources */,
 				896DE36F1F239E0F00B95D2A /* Main.storyboard in Resources */,
 				89E39F0A1F5F52E6007DDD4E /* 40.jpg in Resources */,
@@ -497,6 +528,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		652A388CB2B14E3E87B54606 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chelsea & Alphonso/Pods-Chelsea & Alphonso-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chelsea & Alphonso/Pods-Chelsea & Alphonso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75308FB3191A411547FDE6B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chelsea & Alphonso-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C800956BE3570D811C01A36D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chelsea & Alphonso/Pods-Chelsea & Alphonso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		896DE3621F239E0F00B95D2A /* Sources */ = {
@@ -649,6 +736,7 @@
 		};
 		896DE3791F239E0F00B95D2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F84CBD3F3129D5C4C06FAC6 /* Pods-Chelsea & Alphonso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6257XTCRBF;
@@ -662,6 +750,7 @@
 		};
 		896DE37A1F239E0F00B95D2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C5B26B6E67F78F814FE180 /* Pods-Chelsea & Alphonso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6257XTCRBF;
