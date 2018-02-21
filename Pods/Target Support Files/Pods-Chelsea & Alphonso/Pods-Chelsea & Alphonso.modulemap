@@ -1,0 +1,6 @@
+framework module Pods_Chelsea___Alphonso {
+  umbrella header "Pods-Chelsea & Alphonso-umbrella.h"
+
+  export *
+  module * { export * }
+}
