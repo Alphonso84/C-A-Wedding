@@ -50,32 +50,9 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-yQ-Ny5">
-                                <rect key="frame" x="81" y="255" width="216" height="349"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qC-O2-gdP">
-                                        <rect key="frame" x="0.0" y="0.0" width="216" height="93.666666666666671"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button" backgroundImage="vignette"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs5-Bc-Bpp">
-                                        <rect key="frame" x="0.0" y="127.66666666666669" width="216" height="93.666666666666686"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button" backgroundImage="vignette"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-Zo-4it">
-                                        <rect key="frame" x="0.0" y="255.33333333333334" width="216" height="93.666666666666657"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button" backgroundImage="vignette"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="naF-Nx-VNN">
+                                <rect key="frame" x="16" y="197" width="343" height="335"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.37712696194648743" green="0.34437203407287598" blue="0.37729626893997192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -84,19 +61,19 @@
                             <constraint firstItem="LWl-Rb-HBy" firstAttribute="top" secondItem="RO1-QB-cHb" secondAttribute="bottom" constant="8" symbolic="YES" id="8rc-he-Wdk"/>
                             <constraint firstItem="LWl-Rb-HBy" firstAttribute="top" secondItem="bhB-fu-ptt" secondAttribute="bottom" constant="8" symbolic="YES" id="94y-5c-fN3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yHt-Ox-tVf" secondAttribute="trailing" constant="62" id="D3P-67-c6i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="naF-Nx-VNN" secondAttribute="bottom" constant="109" id="GuE-W8-gfK"/>
                             <constraint firstItem="LWl-Rb-HBy" firstAttribute="leading" secondItem="RO1-QB-cHb" secondAttribute="leading" id="Lgw-DD-0yQ"/>
                             <constraint firstItem="bhB-fu-ptt" firstAttribute="leading" secondItem="RO1-QB-cHb" secondAttribute="leading" id="LuU-3J-o2p"/>
+                            <constraint firstItem="naF-Nx-VNN" firstAttribute="centerX" secondItem="RO1-QB-cHb" secondAttribute="centerX" id="MNK-70-3H1"/>
                             <constraint firstItem="RO1-QB-cHb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="119" id="QTv-W4-nt0"/>
-                            <constraint firstItem="7eR-yQ-Ny5" firstAttribute="trailing" secondItem="yHt-Ox-tVf" secondAttribute="trailing" id="QiA-1C-Ieh"/>
                             <constraint firstItem="bhB-fu-ptt" firstAttribute="trailing" secondItem="RO1-QB-cHb" secondAttribute="trailing" id="TDM-02-zI6"/>
                             <constraint firstItem="LWl-Rb-HBy" firstAttribute="bottom" secondItem="yHt-Ox-tVf" secondAttribute="bottom" id="VvP-Tf-yMd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7eR-yQ-Ny5" secondAttribute="bottom" constant="37" id="YQg-Kc-T3O"/>
+                            <constraint firstItem="naF-Nx-VNN" firstAttribute="top" secondItem="LWl-Rb-HBy" secondAttribute="top" id="Xri-aS-3mu"/>
+                            <constraint firstItem="naF-Nx-VNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lEJ-ci-Yb2"/>
                             <constraint firstItem="yHt-Ox-tVf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="93" id="mac-1d-QRk"/>
-                            <constraint firstItem="7eR-yQ-Ny5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="qfl-FQ-foc"/>
                             <constraint firstItem="bhB-fu-ptt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rM6-KL-FiW"/>
                             <constraint firstItem="yHt-Ox-tVf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="rYq-Md-X5O"/>
                             <constraint firstItem="RO1-QB-cHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wNY-9W-Rvt"/>
-                            <constraint firstItem="7eR-yQ-Ny5" firstAttribute="top" secondItem="bhB-fu-ptt" secondAttribute="bottom" constant="66" id="z7L-8p-Rby"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8kK-E6-pBX"/>
@@ -689,6 +666,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.jpg" width="2048" height="2048"/>
         <image name="Menu" width="32" height="32"/>
         <image name="Photos" width="32" height="32"/>
         <image name="chat" width="21" height="21"/>
@@ -697,6 +675,5 @@
         <image name="list" width="32" height="32"/>
         <image name="tree left" width="88" height="154"/>
         <image name="tree right" width="126" height="260"/>
-        <image name="vignette" width="833" height="360"/>
     </resources>
 </document>

@@ -8,10 +8,13 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
+
 
 
 class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    var ref:DatabaseReference?
+    var handle:DatabaseHandle?
    
     @IBOutlet weak var tableView: UITableView!
     
@@ -49,8 +52,13 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        ref = Database.database().reference()
+//        handle = ref?.child("list").observe(DataEventType.value, with: {(snapshot) in
+//            
+//        })
         if editingStyle == UITableViewCellEditingStyle.delete {
             todoItems?.remove(at: indexPath.row)
+            ref?.child("list").removeValue()
             tableView.reloadData()
            
         }
@@ -67,8 +75,13 @@ class WeddingTodo: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
+        ref = Database.database().reference()
+        handle = ref?.child("list").observe(.childAdded, with: { (snapshot) in
+            if let item = snapshot.value as? String {
+                todoItems?.append(item)
+                self.tableView.reloadData()
+            }
+        })
     }
 
 
